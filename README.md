@@ -4,16 +4,32 @@
 
 ## To run this project locally:
 1. Prerequisites: Make sure you've installed [Node.js] ≥ 12 and [php] ≥ 7
-2. From folder user, install dependencies: `yarn install`
+2. From folder src, install dependencies: `yarn install`
 3. From folder backend, install dependencies: `composer install`
-5. Run the local development server: `yarn dev` (see `package.json` for a
-   full list of `scripts` you can run with `yarn`)
-4. Note: If you want to change the code inside Smart Contract (Cannot change on-chain state): go to package.json -> Change `near dev-deploy` to `near dev-deploy -f`
+4. 
+## Copy .env of app
+```
 
-Now you'll have a local development environment backed by the NEAR TestNet!
+$cp .env.example .env
+
+```
+
+## Migrate and seed data
+```
+
+$php artisan storage:link
+
+$php artisan key:generate
+
+$php artisan migrate
+
+$php artisan db:seed
+
+```
+5. Run the local development server: `yarn dev` in folder src and `php artisan serve` in folder backend (see `package.json` for a
+   full list of `scripts` you can run with `yarn`)
 
 Go ahead and play with the app and the code. As you make code changes, the app will automatically reload.
-
 
 [react]: https://reactjs.org/
 [create-near-app]: https://github.com/near/create-near-app
