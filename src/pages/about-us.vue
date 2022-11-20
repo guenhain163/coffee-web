@@ -124,4 +124,3 @@ export default {
 <style lang="scss" scoped>
 @import '../style/pages/about-us.scss';
 </style>
-

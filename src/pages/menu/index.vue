@@ -20,7 +20,9 @@
         tiến tới chi nhánh của chúng tôi và <br />
         thưởng thức sản phẩm, bạn hãy ghé qua trang chủ chúng tôi để nhận những
         thông tin sớm nhất.<br />
-        <span class="fw-bold" style="font-size: 1.2rem; ">Điện thoạt đặt hàng: 1800 6936</span>
+        <span class="fw-bold" style="font-size: 1.2rem"
+          >Điện thoạt đặt hàng: 1800 6936</span
+        >
       </p>
 
       <div class="about-more">
